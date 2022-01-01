@@ -1,0 +1,53 @@
+
+import pickle
+pickle_file = "./data_pickle/twitter_BIO.pickle3"
+train_texts, train_labels, test_texts, test_labels, label_tag_dict, tag_label_dict = pickle.load(
+    open(pickle_file, 'rb'))
+print(train_texts, train_labels, test_texts, test_labels, label_tag_dict, tag_label_dict )
+
+
+import pickle
+pickle_file = "./data_pickle/twitter_IO.pickle3"
+train_texts, train_labels, test_texts, test_labels, label_tag_dict, tag_label_dict = pickle.load(
+    open(pickle_file, 'rb'))
+print(train_texts, train_labels, test_texts, test_labels, label_tag_dict, tag_label_dict )
+
+import pickle
+pickle_file = "./data_pickle/pubmed_IO.pickle3"
+train_texts, train_labels, test_texts, test_labels, label_tag_dict, tag_label_dict = pickle.load(
+    open(pickle_file, 'rb'))
+print(train_texts, train_labels, test_texts, test_labels, label_tag_dict, tag_label_dict )
+
+import pickle
+pickle_file = "./data_pickle/pubmed_BIO.pickle3"
+train_texts, train_labels, test_texts, test_labels, label_tag_dict, tag_label_dict = pickle.load(
+    open(pickle_file, 'rb'))
+print(train_texts, train_labels, test_texts, test_labels, label_tag_dict, tag_label_dict )
+
+
+import pickle
+import os
+pickle_file1 = os.path.join("data_pickle", 'psytar_adr_IO.pickle3')
+train_texts, train_labels, dev_texts, dev_labels, test_texts, test_labels, label_id_dict, id_label_dict = pickle.load(
+    open(pickle_file1, 'rb'))
+print(train_texts, train_labels, test_texts, test_labels,label_id_dict, id_label_dict )
+
+#
+import pickle
+import os
+pickle_file1 = os.path.join("data_pickle", 'psytar_adr_BIO.pickle3')
+train_texts, train_labels, dev_texts, dev_labels, test_texts, test_labels, label_id_dict, id_label_dict = pickle.load(
+    open(pickle_file1, 'rb'))
+print(train_texts, train_labels, test_texts, test_labels,label_id_dict, id_label_dict )
+
+import pickle
+pickle_file = './data_pickle/cadec_adr_IO.pickle3'
+train_texts, train_labels, dev_texts, dev_labels, test_texts, test_labels, label_id_dict, id_label_dict = pickle.load(
+    open(pickle_file, 'rb'))
+print(train_texts, train_labels, test_texts, test_labels,label_id_dict, id_label_dict )
+#
+import pickle
+pickle_file = './data_pickle/cadec_adr_BIO.pickle3'
+train_texts, train_labels, dev_texts, dev_labels, test_texts, test_labels, label_id_dict, id_label_dict = pickle.load(
+    open(pickle_file, 'rb'))
+print(train_texts, train_labels, test_texts, test_labels,label_id_dict, id_label_dict )
